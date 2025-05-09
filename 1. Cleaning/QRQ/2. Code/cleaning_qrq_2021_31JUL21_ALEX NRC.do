@@ -2710,16 +2710,16 @@ drop total_score- total_score_mean
 drop cj_q43a_norm-cj_q43h_norm
 drop removed_in_2018 wjp_password cc_q6a_usd cc_q6a_gni
 
-save "$path2data/2. Final/qrq_country_averages.dta", replace
+*Create scores
+do "C:\Users\nrodriguez\OneDrive - World Justice Project\Natalia\GitHub\ROLI_2024\1. Cleaning\QRQ\2. Code\Routines\scores.do"
 
-browse
+save "$path2data/2. Final/qrq_country_averages_2021.dta", replace
 
-/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-
+*Saving scores in 2022 folder for analysis
+save "C:\Users\nrodriguez\OneDrive - World Justice Project\Programmatic\Data Analytics\7. WJP ROLI\ROLI_2022\1. Cleaning\QRQ\1. Data\3. Final\qrq_country_averages_2021.dta", replace
 
 
+br
 
 
 
